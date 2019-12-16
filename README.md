@@ -8,6 +8,7 @@ Lo que el programa ofrece es…
   5.	<b>Controlar la actividad mediante botones</b>. Se han creado tres botones que se pueden desactivar o activar con las siguientes posibilidades:
     a.	<b>Detener/Reanudar la actividad del primer empleado</b>: El primer empleado dejará de recoger maletas bajo el contexto de estar descansando.
     b.	<b>Detener/Reanudar la actividad del segundo empleado</b>: El segundo empleado dejará de recoger maletas bajo el contexto de estar descansando.
+    
     c.	<b>Detener/Reanudar ambos empleados</b>:  Los empleados dejarán de realizar sus acciones.
   6.	<b>Consulta remota</b>. Se cuenta con una aplicación aparte, que, contando con las clases necesarias, podrá consultar el estado de la cinta y/o el almacén del avión, desde cualquier otra máquina que conozca la dirección IP del programa local (estando en la misma red o abriendo un puerto desde otra red).
 
