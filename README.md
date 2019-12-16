@@ -1,9 +1,8 @@
 # AirportManagement
 
-Este programa es una simulación de la actividad de un aeropuerto desde que los pasajeros dejan las maletas en la cinta de transporte hasta que los empleados las depositan en el almacén del avión.
+Este programa es una simulación de la actividad de un aeropuerto desde que los pasajeros dejan las maletas en la cinta de transporte hasta que los empleados las depositan en el almacén del avión. Lo que el programa ofrece es…
 
 <ol>
-Lo que el programa ofrece es…
   <li><b>Consultar el estado de la cinta</b>, viendo cuántas y qué maletas hay en ella, además de ver su capacidad máxima.</li>
   <li><b>Consultar el estado del almacén del avión</b>, viendo cuántas y qué maletas hay en él, además de ver su capacidad máxima.</li>
   <li><b>Consultar la actividad de los empleados</b>. Es decir, se puede ver qué está haciendo el empleado en cada momento: puede estar        recogiendo maletas para llevarlas al avión, puede estar volviendo a la cinta, puede estar descansando…</li>
