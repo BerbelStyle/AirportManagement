@@ -16,4 +16,4 @@ Este programa es una simulación de la actividad de un aeropuerto desde que los 
   <li><b>Consulta remota</b>. Se cuenta con una aplicación aparte, que, contando con las clases necesarias, podrá consultar el estado de la cinta y/o el almacén del avión, desde cualquier otra máquina que conozca la dirección IP del programa local (estando en la misma red o abriendo un puerto desde otra red).</li>
 </ol>
 
-Agradecimientos a <a href="https://www.w3schools.com/tags/tag_link.asp"> @hs-mxmx </a> por la ayuda.
+Agradecimientos a <a href="https://github.com/hs-mxmx"> @hs-mxmx </a> por la ayuda.
