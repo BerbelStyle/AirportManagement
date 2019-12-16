@@ -3,37 +3,67 @@ package local;
 import java.util.Date;
 import javax.swing.JTextArea;
 
+/**
+ * Empleado. Se dedicará a recoger maletas de pasajeros y llevarlas a su
+ * respectivo avión.
+ * @author jorge
+ */
 public class Employee extends Thread {
  
+    //Variables
     private final ConveyorBelt myBelt;
     private String id;
     private String suitcase;
     private Plane plane;
     private JTextArea activity;
-    private final Passage passage;
+    private final Pass passage;
     
-    public Employee(ConveyorBelt belt, Passage passage)
+    /**
+     * Constructor.
+     * @param belt cinta en la que buscará maletas.
+     * @param passage 
+     */
+    public Employee(ConveyorBelt belt, Pass passage)
     {
         this.myBelt = belt;
         this.passage = passage;
     }
     
+    /**
+     * Se le asigna un avión al empleado.
+     * @param plane avión en el que trabajará el empleado.
+     */
     public void setPlane(Plane plane) {
         this.plane = plane;
     }
     
+    /**
+     * Se le pone un nombre al empleado.
+     * @param name nombre a dar al empleado.
+     */
     public void setID(String name) {
         this.id = name;
     }
     
+    /**
+     * @return el nombre del empleado.
+     */
     public String getID() {
         return id;
     }
     
+    /**
+     * Se le asigna un JTextArea de la interfaz.
+     * @param act JTextArea de la interfaz.
+     */
     public void setActivity(JTextArea act) {
         this.activity = act;
     }
 
+    /**
+     * Mientras exista el empleado, cogerá maletas de la cinta y 
+     * las llevará al avión.
+     */
     @Override
     public void run()
     {

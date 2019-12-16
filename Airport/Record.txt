@@ -1,86 +1,66 @@
-__________________________RECORD__________________________
+___________________________RECORD___________________________
 
-23:04:47: Passenger23 leaves Passenger23-S1 on the belt. [0.525s]
+21:31:33: Passenger10 leaves Passenger10-S1 on the belt. [0.508s]
 
-23:04:47: Passenger39 leaves Passenger39-S1 on the belt. [0.538s]
+21:31:33: Passenger23 leaves Passenger23-S1 on the belt. [0.542s]
 
-23:04:47: Dani carries Passenger39-S1 to the plane.[0.546s]
+21:31:33: Jorge takes Passenger23-S1 to the plane.[0.609s]
 
-23:04:47: Passenger38 leaves Passenger38-S1 on the belt. [0.543s]
+21:31:33: Passenger30 leaves Passenger30-S1 on the belt. [0.564s]
 
-23:04:47: Passenger32 leaves Passenger32-S1 on the belt. [0.555s]
+21:31:33: Passenger38 leaves Passenger38-S1 on the belt. [0.558s]
 
-23:04:47: Passenger18 leaves Passenger18-S1 on the belt. [0.566s]
+21:31:33: Passenger25 leaves Passenger25-S1 on the belt. [0.574s]
 
-23:04:47: Passenger27 leaves Passenger27-S1 on the belt. [0.591s]
+21:31:33: Passenger22 leaves Passenger22-S1 on the belt. [0.583s]
 
-23:04:47: Passenger14 leaves Passenger14-S1 on the belt. [0.6s]
+21:31:33: Passenger6 leaves Passenger6-S1 on the belt. [0.627s]
 
-23:04:47: Passenger5 leaves Passenger5-S1 on the belt. [0.612s]
+21:31:33: Passenger32 leaves Passenger32-S1 on the belt. [0.599s]
 
-23:04:47: Passenger28 leaves Passenger28-S1 on the belt. [0.619s]
+21:31:33: Passenger34 leaves Passenger34-S1 on the belt. [0.607s]
 
-23:04:47: Jorge carries Passenger28-S1 to the plane.[0.645s]
+21:31:33: Dani takes Passenger34-S1 to the plane.[0.663s]
 
-23:04:47: Passenger35 leaves Passenger35-S1 on the belt. [0.651s]
+21:31:33: Passenger35 leaves Passenger35-S1 on the belt. [0.626s]
 
-23:04:47: Jorge carries Passenger35-S1 to the plane.[0.447s]
+21:31:33: Jorge takes Passenger35-S1 to the plane.[0.564s]
 
-23:04:47: Passenger22 leaves Passenger22-S1 on the belt. [1.686s]
+21:31:33: Passenger27 leaves Passenger27-S1 on the belt. [1.718s]
 
-23:04:47: Dani carries Passenger22-S1 to the plane.[0.628s]
+21:31:33: Dani takes Passenger27-S1 to the plane.[0.507s]
 
-23:04:47: Passenger33 leaves Passenger33-S1 on the belt. [1.748s]
+21:31:33: Passenger17 leaves Passenger17-S1 on the belt. [1.74s]
 
-23:04:47: Dani carries Passenger33-S1 to the plane.[0.446s]
+21:31:33: Dani takes Passenger17-S1 to the plane.[0.606s]
 
-23:04:47: Passenger11 leaves Passenger11-S1 on the belt. [2.814s]
+21:31:33: Passenger3 leaves Passenger3-S1 on the belt. [2.846s]
 
-23:04:47: Jorge carries Passenger11-S1 to the plane.[0.65s]
+21:31:33: Jorge takes Passenger3-S1 to the plane.[0.556s]
 
-23:04:47: Passenger30 leaves Passenger30-S1 on the belt. [2.908s]
+21:31:33: Passenger1 leaves Passenger1-S1 on the belt. [3.012s]
 
-23:04:47: Dani carries Passenger30-S1 to the plane.[0.421s]
+21:31:33: Dani takes Passenger1-S1 to the plane.[0.435s]
 
-23:04:47: Passenger21 leaves Passenger21-S1 on the belt. [3.712s]
+21:31:33: Passenger31 leaves Passenger31-S1 on the belt. [3.742s]
 
-23:04:47: Jorge carries Passenger21-S1 to the plane.[0.437s]
+21:31:33: Jorge takes Passenger31-S1 to the plane.[0.488s]
 
-23:04:47: Passenger20 leaves Passenger20-S1 on the belt. [3.978s]
+21:31:33: Passenger8 leaves Passenger8-S1 on the belt. [3.906s]
 
-23:04:47: Dani carries Passenger20-S1 to the plane.[0.455s]
+21:31:33: Dani takes Passenger8-S1 to the plane.[0.552s]
 
-23:04:47: Passenger9 leaves Passenger9-S1 on the belt. [4.807s]
+21:31:33: Passenger29 leaves Passenger29-S1 on the belt. [4.788s]
 
-23:04:47: Jorge carries Passenger9-S1 to the plane.[0.673s]
+21:31:33: Jorge takes Passenger29-S1 to the plane.[0.687s]
 
-23:04:47: Passenger29 leaves Passenger29-S1 on the belt. [5.071s]
+21:31:33: Passenger16 leaves Passenger16-S1 on the belt. [5.25s]
 
-23:04:47: Dani carries Passenger29-S1 to the plane.[0.691s]
+21:31:33: Dani takes Passenger16-S1 to the plane.[0.504s]
 
-23:04:47: Passenger25 leaves Passenger25-S1 on the belt. [5.935s]
+21:31:33: Passenger7 leaves Passenger7-S1 on the belt. [5.977s]
 
-23:04:47: Jorge carries Passenger25-S1 to the plane.[0.423s]
+21:31:33: Jorge takes Passenger7-S1 to the plane.[0.535s]
 
-23:04:47: Passenger2 leaves Passenger2-S1 on the belt. [6.225s]
-
-23:04:47: Dani carries Passenger2-S1 to the plane.[0.605s]
-
-23:04:47: Passenger26 leaves Passenger26-S1 on the belt. [7.134s]
-
-23:04:47: Jorge carries Passenger26-S1 to the plane.[0.612s]
-
-23:04:47: Passenger24 leaves Passenger24-S1 on the belt. [7.508s]
-
-23:04:47: Dani carries Passenger24-S1 to the plane.[0.599s]
-
-23:04:47: Passenger17 leaves Passenger17-S1 on the belt. [8.4s]
-
-23:04:47: Jorge carries Passenger17-S1 to the plane.[0.488s]
-
-23:04:47: Passenger6 leaves Passenger6-S1 on the belt. [8.607s]
-
-23:04:47: Dani carries Passenger6-S1 to the plane.[0.401s]
-
-23:04:47: Passenger34 leaves Passenger34-S1 on the belt. [9.293s]
+21:31:33: Passenger19 leaves Passenger19-S1 on the belt. [6.251s]
 

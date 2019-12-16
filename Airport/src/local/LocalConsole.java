@@ -6,48 +6,43 @@ import java.io.File;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 
+/**
+ * Interfaz para uso local del programa. Muestra el contenido de la cinta,
+ * el contenido del avión y lo que están haciendo los empleados. Además, a
+ * éstos últimos se les puede dar la orden de parar. Se puede consultar un
+ * historial de eventos.
+ * @author jorge
+ */
 public class LocalConsole extends javax.swing.JFrame {
     
+    //Variables
     private boolean buttonPressed1, buttonPressed2, buttonPressed3 = false;
-    ConveyorBelt belt = new ConveyorBelt();
+    ConveyorBelt belt = new ConveyorBelt(8);
     Plane plane = new Plane();
-    Passage passage = new Passage();
+    Pass passage = new Pass();
     
+    /**
+     * Constructor.
+     */
     public LocalConsole() {
         initComponents();
-        setLocationRelativeTo(null);
+        setLocationRelativeTo(null); //Se centra en la pantalla.
         setSize(730, 550);    
         Console.setSize(730,550);
+        //Asignación de elementos de interfaz a la cinta y al avión.
         belt.setText(jTextAreaBelt);
         belt.setProgress(jProgressBar2);
         plane.setText(jTextAreaPlane);
         plane.setProgress(jProgressBar1);
+        //Estética
         jLabelLcorner.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/leftCorner.png")));
         jLabelRcorner.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/rightCorner.png")));
         recordButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/recordIcon.png")));      
         globalButton.setBorderPainted(false);
         globalButton.setFocusPainted(false);
         globalButton.setContentAreaFilled(false);
-    
-        for (int i=0; i<40; i++) {      
-            if (i<=1) {
-                Employee e = new Employee(belt, passage);
-                if (i==0) {
-                    e.setID("Jorge");
-                    e.setActivity(jTextAreaEmployee1);
-                    jLabel5.setText(e.getID());
-                    e.setPlane(plane);
-                } else {
-                    e.setID("Dani");
-                    e.setActivity(jTextAreaEmployee2);
-                    jLabel7.setText(e.getID());
-                    e.setPlane(plane);
-                }
-                e.start();   
-            }           
-            Passenger p = new Passenger("Passenger"+(i+1), belt);
-            p.start();
-        }
+        //Inicialización del programa
+        initialize();  
     }
     
     /**
@@ -87,7 +82,7 @@ public class LocalConsole extends javax.swing.JFrame {
         jProgressBar1 = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Aeropuerto");
+        setTitle("Airport");
         setAutoRequestFocus(false);
         setBackground(new java.awt.Color(0, 0, 153));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -301,14 +296,52 @@ public class LocalConsole extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Se crean los pasajeros que van a estar dejando maletas y a los
+     * empleados que estarán recogiéndolas.
+     */
+    public final void initialize() {
+        for (int i=0; i<40; i++) {      
+            if (i<=1) {
+                Employee e = new Employee(belt, passage);
+                if (i==0) {
+                    e.setID("Jorge");
+                    //Se muestra la actividad de Jorge en un JTextArea.
+                    e.setActivity(jTextAreaEmployee1);
+                    jLabel5.setText(e.getID());
+                    e.setPlane(plane);
+                } else {
+                    e.setID("Dani");
+                    //Se muestra la actividad de Dani en un JTextArea.
+                    e.setActivity(jTextAreaEmployee2);
+                    jLabel7.setText(e.getID());
+                    e.setPlane(plane);
+                }
+                e.start();   
+            }           
+            Passenger p = new Passenger("Passenger"+(i+1), belt);
+            p.start();
+        }
+    }
+    
+    /**
+     * @return el contenido del JTextArea relacionado con la cinta.
+     */
     public String getBelt() {
         return jTextAreaBelt.getText();
     }
     
+    /**
+     * @return el contenido del JTextArea relacionado con el avión.
+     */
     public String getPlane() {
         return jTextAreaPlane.getText();
     }
     
+    /**
+     * Se parará al empleado 1 (Jorge), con el contexto de estar descansando.
+     * @param evt 
+     */
     private void emp1ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emp1ButtonActionPerformed
         if(buttonPressed1) {
             JOptionPane.showMessageDialog(this, "No activity", "Error", JOptionPane.ERROR_MESSAGE);
@@ -323,6 +356,10 @@ public class LocalConsole extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_emp1ButtonActionPerformed
 
+    /**
+     * Se parará al empleado 2 (Dani), con el contexto de estar descansando.
+     * @param evt 
+     */
     private void emp2ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emp2ButtonActionPerformed
         if(buttonPressed1) {
             JOptionPane.showMessageDialog(this, "No activity", "Error", JOptionPane.ERROR_MESSAGE);
@@ -337,6 +374,10 @@ public class LocalConsole extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_emp2ButtonActionPerformed
 
+    /**
+     * Se pararán a todos.
+     * @param evt 
+     */
     private void globalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_globalButtonActionPerformed
         if (!buttonPressed1) {
             buttonPressed1 = true;
@@ -359,14 +400,15 @@ public class LocalConsole extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_globalButtonActionPerformed
 
+    /**
+     * Abrirá el historial de eventos.
+     * @param evt 
+     */
     private void recordButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recordButtonActionPerformed
-
-            try {
-                File fileObject = new File("Record.txt");
-                Desktop.getDesktop().open(fileObject); 
-            } catch (IOException ex) {
-            }
-                 
+        try {
+            File fileObject = new File("Record.txt");
+            Desktop.getDesktop().open(fileObject); 
+        } catch (IOException ex) {}             
     }//GEN-LAST:event_recordButtonActionPerformed
 
     /**
@@ -396,12 +438,7 @@ public class LocalConsole extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
+ 
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {

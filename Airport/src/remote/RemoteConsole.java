@@ -1,17 +1,33 @@
 package remote;
 
+/**
+ * Consola remota. Esta interfaz mostrará los datos que le envíe el servidor
+ * a su cliente asociado.
+ * @author jorge
+ */
 public class RemoteConsole extends javax.swing.JFrame {
  
+    /**
+     * Constructor.
+     */
     public RemoteConsole() {
         initComponents();     
         setSize(430, 300);    
         Console.setSize(430, 300);
     }
 
+    /**
+     * Muestra los datos de la cinta enviados por el servidor en la interfaz.
+     * @param response respuesta del servidor respecto a la cinta.
+     */
     public void setBelt(String response) {
         jTextArea1.setText(response);
     }
     
+    /**
+     * Muestra los datos del avión enviados por el servidor en la interfaz.
+     * @param response respuesta del servidor respecto al avión.
+     */
     public void setPlane(String response) {
         jTextArea2.setText(response);
     }
@@ -36,8 +52,8 @@ public class RemoteConsole extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Cliente");
-        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/images/cliente.png")).getImage());
+        setTitle("Client");
+        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/images/clientIcon.png")).getImage());
         setResizable(false);
 
         Console.setBackground(new java.awt.Color(153, 0, 0));
@@ -94,7 +110,7 @@ public class RemoteConsole extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Console, javax.swing.GroupLayout.DEFAULT_SIZE, 318, Short.MAX_VALUE)
+            .addComponent(Console, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -125,8 +141,6 @@ public class RemoteConsole extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(RemoteConsole.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
     
